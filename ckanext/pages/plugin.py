@@ -172,6 +172,7 @@ class PagesPlugin(PagesPluginBase):
                     action='blog_index', ckan_icon='file', controller=controller, highlight_actions='blog_edit blog_index blog_show')
         map.connect('blog_show', '/blog{page:/.*|}',
                     action='blog_show', ckan_icon='file', controller=controller, highlight_actions='blog_edit blog_index blog_show')
+        
         return map
 
 
